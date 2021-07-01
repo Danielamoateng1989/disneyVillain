@@ -1,5 +1,5 @@
 const villainsList = [{
-
+    
     name: 'Captain America',
     realName: 'Steve Rogers',
     firstAppearance: 'Captain America Comics #1',
@@ -9,6 +9,14 @@ const villainsList = [{
     realName: 'Peter Parker',
     firstAppearance: 'Amazing Fantasy #15',
     slug: 'spider-man'
-}]
+}];
 
-module.exports = { villainsList }
+const singleVillain = {
+  name: 'Iron Man',
+  realname: 'Tony Shack',
+  firstAppearance: 'Tales of suspense',
+  slug: 'iron-man'
+
+}
+
+module.exports = { villainsList, singleVillain}

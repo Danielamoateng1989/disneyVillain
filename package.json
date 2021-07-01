@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "tests": "./node_modules/.bin/mocha tests/**/*.test.js"
+    "dev":"./node_modules/.bin/nodemon index.js",
+    "test": "./node_modules/.bin/mocha tests/**/*.test.js"
   },
   "author": "Daniel Amoateng",
   "license": "ISC",

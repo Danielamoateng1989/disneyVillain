@@ -10,4 +10,4 @@ const villains = (connection, sequelize) => {
     
     }
     
-    module.exports = villains;
+    module.exports = { villains}

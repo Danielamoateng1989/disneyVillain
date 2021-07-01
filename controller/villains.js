@@ -1,15 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 const villains = require('../models/villains')
-const villainsModels = require('../models')
-
-
-
+const models = require('../models')
 
 
 //GET ALL VILLAINS FROM DATABSE
 const  getAllVillains =  async (request, response) => {
-   const villains =  await villainsModels.villains.findAll();
+   const villains =  await models.villains.findAll();
    return response.send(villains)
 }
 
@@ -17,7 +14,7 @@ const  getAllVillains =  async (request, response) => {
 //GET VILLAIN BY SLUG
 const  getVillainBySlug = async (request, response) => {
   const { slug } = request.params
-  const foundVillainBySlug = await villainsModels.villains.findOne()
+  const foundVillainBySlug = await models.villains.findOne()
 
   return response.send(foundVillainBySlug)
 
